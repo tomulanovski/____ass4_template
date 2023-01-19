@@ -41,7 +41,7 @@ def main():
     GROUP BY Name
     ORDER BY Name''')
     for item in report:
-        print(item)          
+        print(*item)          
     print()
     report = repo.execute_command( '''SELECT activitys.date , products.description , 
     activitys.quantity, employees.name, suppliers.name
